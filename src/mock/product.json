@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "organizeId": 1,
+        "imageCoverPath": "C:/uploads/SY-A0660-1739430947999.png",
+        "productId": "SY-A0660 ",
+        "basePrice": 55,
+        "salePrice": 120,
+        "size": "72",
+        "sizeUnitId": "Inch",
+        "inPackAmount": 6,
+        "inPackAmountTypeId": "Pcs",
+        "stock": null,
+        "availabilityId": 1,
+        "badgeId": 1,
+        "description": null,
+        "createdAt": "2025-02-13T06:41:05.439Z",
+        "updatedAt": "2025-06-16T08:50:02.493Z",
+        "organize": {
+            "id": 1,
+            "name": "Dry Super"
+        },
+        "productNames": [
+            {
+                "name": "ห่วงยางเด็กขาสอด เป็ดเหลืองจูเนียร์",
+                "languageCode": "th"
+            },
+            {
+                "name": "Baby inflatable Duck yellow",
+                "languageCode": "en"
+            }
+        ],
+        "categories": [],
+        "tags": [],
+        "packgages": [
+            {
+                "id": 5,
+                "name": "แพค",
+                "inPackAmount": 6,
+                "price": 330,
+                "salePrice": 720
+            }
+        ],
+        "details": {
+            "images": [
+                {
+                    "id": 1,
+                    "detailId": 1,
+                    "colorId": 1,
+                    "path": "C:/uploads/SY-A0660-1739431233718.png",
+                    "altText": null,
+                    "createdAt": "2025-02-13T07:20:34.174Z",
+                    "updatedAt": "2025-02-13T07:20:34.174Z"
+                }
+            ],
+            "colors": [
+                {
+                    "id": 1,
+                    "availabilityId": 1,
+                    "detailId": 1,
+                    "colorDetailId": 1,
+                    "price": null,
+                    "salePrice": null,
+                    "color_detail": {
+                        "id": 1,
+                        "name": "Yellow",
+                        "code": "#facc15"
+                    }
+                }
+            ],
+            "sizes": []
+        },
+        "classifications": [
+            {
+                "id": 2,
+                "name": "Popular"
+            }
+        ],
+        "badge": {
+            "id": 1,
+            "name": "Hot",
+            "color": "#f74b81",
+            "icon": null
+        }
+    },
+    {
+        "id": 2,
+        "organizeId": 1,
+        "imageCoverPath": "C:/uploads/SY-A0768-1739431043629.png",
+        "productId": "SY-A0768",
+        "basePrice": 65,
+        "salePrice": 120,
+        "size": "27",
+        "sizeUnitId": "Inch",
+        "inPackAmount": 6,
+        "inPackAmountTypeId": "Pcs",
+        "stock": null,
+        "availabilityId": 1,
+        "badgeId": 1,
+        "description": null,
+        "createdAt": "2025-02-13T06:44:07.192Z",
+        "updatedAt": "2025-06-16T08:50:02.493Z",
+        "organize": {
+            "id": 1,
+            "name": "Dry Super"
+        },
+        "productNames": [
+            {
+                "name": "ห่วงยางขาสอด น้องหมา",
+                "languageCode": "th"
+            },
+            {
+                "name": "Swimming Ring Dog",
+                "languageCode": "en"
+            }
+        ],
+        "categories": [],
+        "tags": [],
+        "packgages": [
+            {
+                "id": 5,
+                "name": "แพค",
+                "inPackAmount": 6,
+                "price": 390,
+                "salePrice": 1140
+            }
+        ],
+        "details": {
+            "images": [
+                {
+                    "id": 2,
+                    "detailId": 2,
+                    "colorId": 2,
+                    "path": "C:/uploads/SY-A0768-1739431274341.png",
+                    "altText": null,
+                    "createdAt": "2025-02-13T07:21:14.609Z",
+                    "updatedAt": "2025-02-13T07:21:14.609Z"
+                }
+            ],
+            "colors": [
+                {
+                    "id": 2,
+                    "availabilityId": 1,
+                    "detailId": 2,
+                    "colorDetailId": 2,
+                    "price": null,
+                    "salePrice": null,
+                    "color_detail": {
+                        "id": 2,
+                        "name": "Pink",
+                        "code": "#ec4899"
+                    }
+                }
+            ],
+            "sizes": []
+        },
+        "classifications": [
+            {
+                "id": 2,
+                "name": "Popular"
+            }
+        ],
+        "badge": {
+            "id": 1,
+            "name": "Hot",
+            "color": "#f74b81",
+            "icon": null
+        }
+    }
+]
