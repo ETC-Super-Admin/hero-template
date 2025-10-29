@@ -2,8 +2,8 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
-import { Providers } from "../../../providers/HeroProviders";
-import StoreProvider from "../../../providers/StoreProvider";
+import StoreProvider from "@/providers/StoreProvider";
+import { Providers } from "@/providers/HeroProviders";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 
