@@ -26,12 +26,16 @@ GET /api/groups
   {
     "id": "cln0s8c0s00001a2b3c4d5e6f",
     "groupId": "Ca6b8d8e7c6a5b4c3d2e1f0a9b8c7d6e",
-    "name": "My Awesome Group"
+    "name": "My Awesome Group",
+    "memberAmount": 10,
+    "imageCount": 50
   },
   {
     "id": "cln0s8c0s00011a2b3c4d5e6f",
     "groupId": "Ub6b8d8e7c6a5b4c3d2e1f0a9b8c7d6e",
-    "name": "Another Group Chat"
+    "name": "Another Group Chat",
+    "memberAmount": 25,
+    "imageCount": 120
   }
 ]
 ```
@@ -51,7 +55,7 @@ Retrieves a daily summary of messages and their verification statuses for a spec
 *   `date` (string, required, format: YYYY-MM-DD): The date for which to retrieve the summary.
 
 **Example Request:**
-
+let
 ```
 GET /api/groups/cln0s8c0s00001a2b3c4d5e6f/summary?date=2023-10-29
 ```
