@@ -17,6 +17,7 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
+import { SidebarToggle } from "@/components/layout/sidebar-toggle";
 
 export const Navbar = () => {
   const searchInput = (
@@ -38,8 +39,9 @@ export const Navbar = () => {
   );
 
   return (
-    <HeroUINavbar maxWidth="xl" position="sticky">
+    <HeroUINavbar maxWidth="full" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+        <SidebarToggle />
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <p className="font-bold text-inherit">ACME</p>

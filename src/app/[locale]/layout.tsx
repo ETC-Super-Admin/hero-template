@@ -6,6 +6,8 @@ import StoreProvider from "@/providers/StoreProvider";
 import { Providers } from "@/providers/HeroProviders";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { LeftSidebar } from "@/components/layout/left-sidebar";
+import { SidebarProvider } from "@/contexts/sidebar-context";
 
 export default async function LocaleLayout({
   children,
@@ -24,13 +26,18 @@ export default async function LocaleLayout({
     <NextIntlClientProvider>
       <StoreProvider>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col min-h-screen">
-            <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-              {children}
-            </main>
-            <Footer />
-          </div>
+          <SidebarProvider>
+            <div className="relative flex flex-col min-h-screen">
+              <Navbar />
+              <div className="relative flex flex-row flex-1">
+                <LeftSidebar />
+                <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+                  {children}
+                </main>
+              </div>
+              <Footer />
+            </div>
+          </SidebarProvider>
         </Providers>
       </StoreProvider>
     </NextIntlClientProvider>
