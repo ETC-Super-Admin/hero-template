@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -7,19 +9,23 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@heroui/navbar";
-import { Button } from "@heroui/button";
 import { Kbd } from "@heroui/kbd";
 import { Link } from "@heroui/link";
 import { Input } from "@heroui/input";
 import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
+import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { SidebarToggle } from "@/components/layout/sidebar-toggle";
+import { ViewModeToggle } from "@/components/common/navbar/view-mode-toggle";
 
-export const Navbar = () => {
+export const Navbar = ({ locale }: { locale: string }) => {
+  const pathname = usePathname();
+  const isGalleryPage = pathname.startsWith(`/${locale}/gallery/`) && (pathname.endsWith('/group') || pathname.endsWith('/user'));
+
   const searchInput = (
     <Input
       aria-label="Search"
@@ -72,18 +78,11 @@ export const Navbar = () => {
         <NavbarItem className="hidden sm:flex gap-2">
           <ThemeSwitch />
         </NavbarItem>
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-        <NavbarItem className="hidden md:flex">
-          <Button
-            isExternal
-            as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
-            href={siteConfig.links.sponsor}
-            variant="flat"
-          >
-            Sponsor
-          </Button>
-        </NavbarItem>
+        {isGalleryPage && (
+          <NavbarItem className="hidden sm:flex gap-2">
+            <ViewModeToggle />
+          </NavbarItem>
+        )}
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">

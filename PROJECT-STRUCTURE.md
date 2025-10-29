@@ -10,20 +10,30 @@ C:\Users\Asus\Desktop\brain-line\hero-template\
 ├── src\
 │   ├── app\
 │   │   ├── [locale]\
-│   │   │   ├── layout.tsx
-│   │   │   └── page.tsx
+│   │   │   ├── gallery\
+│   │   │   │   ├── [viewMode]\
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   └── layout.tsx
 │   │   ├── layout.tsx
 │   │   ├── not-found.tsx
 │   │   └── page.tsx
 │   ├── components\
+│   │   ├── common\
+│   │   │   └── navbar\
+│   │   │       └── view-mode-toggle.tsx
 │   │   ├── examples\
 │   │   │   └── counter.tsx
+│   │   ├── gallery\
+│   │   │   └── view-mode-selection.tsx
 │   │   ├── icons\
 │   │   │   ├── index.ts
 │   │   │   ├── MoonFilled.tsx
 │   │   │   └── SunFilled.tsx
 │   │   ├── layout\
+│   │   │   ├── client-navbar-wrapper.tsx
 │   │   │   ├── footer.tsx
+│   │   │   ├── left-sidebar.tsx
 │   │   │   └── navbar.tsx
 │   │   ├── ui\
 │   │   │   └── button.tsx
@@ -32,6 +42,8 @@ C:\Users\Asus\Desktop\brain-line\hero-template\
 │   ├── config\
 │   │   ├── fonts.ts
 │   │   └── site.ts
+│   ├── contexts\
+│   │   └── sidebar-context.tsx
 │   ├── i18n\
 │   │   ├── navigation.ts
 │   │   ├── request.ts

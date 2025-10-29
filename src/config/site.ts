@@ -5,24 +5,8 @@ export const siteConfig = {
   description: "The official website for ETC Online, your go-to platform for all things ETC.",
   navItems: [
     {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
+      label: "Gallery",
+      href: "/gallery",
     },
   ],
   navMenuItems: [
